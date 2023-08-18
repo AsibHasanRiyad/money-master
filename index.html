@@ -18,13 +18,30 @@
             </div>
             <div class="bg-[#F8F8F8] text-2xl p-4 rounded-md">
                 <div class="">
-                    <h1 class="text-center font-medium">Income</h1>
-                <p class="my-4  text-center">Income: <input id="income" type="text" placeholder="Type here" class="input ml-3 lg:w-[50%]  max-w-xs bg-[#DCDCDC] placeholder:text-white" /></p> 
-                <!-- expenses -->
+                <h1 class="text-center font-medium">Income</h1>
+                <table class="w-[90%]">
+                    <tr class="">
+                        <td><p class="my-4 text-end"> <span class="w-1/4">Income: </span></p>  </td>
+                        <td><input id="income" type="text" placeholder="Type here" class="input ml-3 md:w-full bg-[#DCDCDC] placeholder:text-white" /> </td>
+                    </tr>
+                </table>
                 <h1 class="text-center font-medium">Expenses</h1>
-                <p class="my-4 text-center">  Food: <input id="food"  type="text" placeholder="Type here" class="input ml-3 lg:w-[70%] max-w-xs bg-[#DCDCDC] placeholder:text-white" /></p> 
-                <p class="my-4  text-center">  Rent:<input id="rent"  type="text" placeholder="Type here" class="input ml-3 lg:w-[70%]  max-w-xs bg-[#DCDCDC] placeholder:text-white" /></p> 
-                <p class="my-4  text-center"> Clothes:<input id="clothes"  type="text" placeholder="Type here" class="input ml-3 lg:w-[50%]  max-w-xs bg-[#DCDCDC] placeholder:text-white" /> </p> 
+                <table class="w-[90%]">
+                    <tr class="">
+                        <td><p class="my-4 text-end"> <span class="w-1/4">Food: </span></p>  </td>
+                        <td><input id="food"  type="text" placeholder="Type here" class="input md:w-full ml-3  bg-[#DCDCDC] placeholder:text-white" /> </td>
+                    </tr>
+                    <tr>
+                        <td><p class="my-4  text-end">Rent: </p> </td>
+                        <td><input id="rent"  type="text" placeholder="Type here" class="input md:w-full ml-3 bg-[#DCDCDC] placeholder:text-white" /></td>
+                    </tr>
+                    <tr>
+                        <td><p class="my-4  text-end">Clothes: </p> </td>
+                        <td>
+                            <input id="clothes"  type="text" placeholder="Type here" class="input ml-3  md:w-full bg-[#DCDCDC] placeholder:text-white" /> 
+                        </td>
+                    </tr>
+                </table>
                 <div class="flex justify-center">
                     <button onclick="calculator()" class="btn px-16 mt-5 bg-sky-600 hover:bg-sky-500 text-white">Calculate</button>
                 </div>
