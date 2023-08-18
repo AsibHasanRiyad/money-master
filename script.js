@@ -20,7 +20,10 @@ function calculator() {
     const expenses = document.getElementById('expenses');
     expenses.innerText = totalExpenses
     // balance
-    const remainBalance = income - totalExpenses
+    const remainBalance = income - totalExpenses;
+    if (remainBalance < 0) {
+        return alert ('Insufficient Balance')
+    }
     const balance = document.getElementById('balance');
     balance.innerText = remainBalance;
 
