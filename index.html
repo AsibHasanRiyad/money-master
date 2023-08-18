@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Money Master</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="m-3 md:m-10">
+    <header>
+        <h1 class="text-center text-4xl font-extrabold text-[#59A5FF] ">Money Master💰 </h1>
+    </header>
+    <main class="mt-16">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+            <div class="flex justify-center">
+                <img class="w-[100%] lg:h-[90vh]  rounded-md" src="1.jpg" alt="">
+            </div>
+            <div class="bg-[#F8F8F8] text-2xl p-4 rounded-md">
+                <div class="">
+                    <h1 class="text-center font-medium">Income</h1>
+                <p class="my-4  text-center">Income: <input id="income" type="text" placeholder="Type here" class="input ml-3 lg:w-[50%]  max-w-xs bg-[#DCDCDC] placeholder:text-white" /></p> 
+                <!-- expenses -->
+                <h1 class="text-center font-medium">Expenses</h1>
+                <p class="my-4 text-center">  Food: <input id="food"  type="text" placeholder="Type here" class="input ml-3 lg:w-[70%] max-w-xs bg-[#DCDCDC] placeholder:text-white" /></p> 
+                <p class="my-4  text-center">  Rent:<input id="rent"  type="text" placeholder="Type here" class="input ml-3 lg:w-[70%]  max-w-xs bg-[#DCDCDC] placeholder:text-white" /></p> 
+                <p class="my-4  text-center"> Clothes:<input id="clothes"  type="text" placeholder="Type here" class="input ml-3 lg:w-[50%]  max-w-xs bg-[#DCDCDC] placeholder:text-white" /> </p> 
+                <div class="flex justify-center">
+                    <button onclick="calculator()" class="btn px-16 mt-5 bg-sky-600 hover:bg-sky-500 text-white">Calculate</button>
+                </div>
+                <h1 class="text-center my-6 font-medium">Total Expenses: <span id="expenses">00</span> TK</h1>
+                <h1 class="text-center my-6 font-medium">Balance: <span id="balance">00</span> TK</h1>
+                </div>
+                <div class="w-[90%] mx-auto md:flex flex-row  justify-center gap-6">
+                    <h1 class="mt-2">Save: </h1>
+                    <input id="save" type="text" placeholder="Type here" class="input md:ml-3 py-4 my-4 md:my-0 lg:w-[20%]  max-w-xs bg-[#DCDCDC] placeholder:text-white" /> <span class="mt-2">%</span>
+                    <button onclick="savings()" class="btn px-12 text-white bg-sky-600 hover:bg-sky-500">Save</button> </h1>
+                </div>
+                <h1 class="text-center font-medium my-5">Saving Amount : <span id="saving-amount">00</span></h1>
+                <h1 class="text-center font-medium">Remaining Balance : <span id="remain-balance">00</span></h1>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
